@@ -23,24 +23,23 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding-top: 40px;
+      padding: 20px;
     }
 
-    /* REDUCED FULL-WIDTH LOGO */
-    .logo {
-      width: 70vw;          /* reduced from 100vw */
-      max-width: 900px;     /* hard cap so it never gets huge */
-      min-width: 300px;
-      height: auto;
-      object-fit: contain;
-      display: block;
-      margin-bottom: 25px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
+    /* SITE TITLE AT TOP */
+    .site-title {
+      font-size: 2.5rem;
       color: #8B0000;
+      margin-bottom: 10px;
+    }
+
+    /* REDUCED-HEIGHT LOGO */
+    .logo {
+      max-height: 220px;     /* controls height directly */
+      width: auto;
+      max-width: 80vw;
+      object-fit: contain;
+      margin: 20px 0 25px;
     }
 
     p {
@@ -48,7 +47,6 @@
       margin-bottom: 30px;
       color: #003366;
       max-width: 800px;
-      padding: 0 20px;
     }
 
     .cta-btn {
@@ -67,13 +65,12 @@
 
     /* MOBILE */
     @media (max-width: 768px) {
-      .logo {
-        width: 85vw;
-        max-width: 500px;
+      .site-title {
+        font-size: 2rem;
       }
 
-      h1 {
-        font-size: 2rem;
+      .logo {
+        max-height: 150px;
       }
 
       p {
@@ -86,13 +83,15 @@
 <body>
 
   <header>
-    <img src="logo.png" alt="A&R HOMECRAFT Logo" class="logo">
 
-    <h1>Welcome to A&R HOMECRAFT</h1>
+    <div class="site-title">A&amp;R HOMECRAFT</div>
+
+    <img src="logo.png" alt="A&R HOMECRAFT Logo" class="logo">
 
     <p>Your trusted partner in quality home craftsmanship.</p>
 
     <a href="#contact" class="cta-btn">Get Started</a>
+
   </header>
 
 </body>
