@@ -1,60 +1,92 @@
-<header>
-  <div class="hero-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A&R HOMECRAFT</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      background: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* FULL-WIDTH LOGO */
+    .logo {
+      width: 100vw;          /* full browser width */
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-top: 20px;
+      color: #8B0000;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin: 20px 0 30px;
+      color: #003366;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    .cta-btn {
+      background: #8B0000;
+      color: #ffffff;
+      padding: 15px 40px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background: #a50000;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
     <img src="logo.png" alt="A&R HOMECRAFT Logo" class="logo">
+
     <h1>Welcome to A&R HOMECRAFT</h1>
+
     <p>Your trusted partner in quality home craftsmanship.</p>
+
     <a href="#contact" class="cta-btn">Get Started</a>
-  </div>
-</header>
+  </header>
 
-<style>
-  header {
-    background: #fff; /* white for logo visibility */
-    height: 100vh; /* full screen */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    flex-direction: column;
-  }
-
-  header img.logo {
-    width: 300px; /* much larger logo */
-    max-width: 80%; /* responsive */
-    margin-bottom: 30px;
-  }
-
-  header h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #8B0000; /* dark red */
-  }
-
-  header p {
-    font-size: 1.3rem;
-    margin-bottom: 30px;
-    color: #003366; /* dark blue */
-  }
-
-  header a.cta-btn {
-    display: inline-block;
-    background: #8B0000;
-    color: #fff;
-    padding: 15px 40px;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: background 0.3s;
-  }
-
-  header a.cta-btn:hover {
-    background: #a50000;
-  }
-
-  @media(max-width:768px){
-    header img.logo { width: 500px; }
-    header h1 { font-size: 2rem; }
-    header p { font-size: 1rem; }
-  }
-</style>
-
+</body>
+</html>
